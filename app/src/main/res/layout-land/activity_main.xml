@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:background="#f44336"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_restart"
+            android:clickable="true"
+            android:src="@drawable/selector_restart"
+            android:visibility="invisible"
+            android:layout_alignTop="@+id/imageView_startPause"
+            android:layout_toLeftOf="@+id/textView4"
+            android:layout_toStartOf="@+id/textView4"
+            android:layout_marginRight="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_lap"
+            android:clickable="true"
+            android:src="@drawable/selector_lap"
+            android:visibility="invisible"
+            android:layout_alignTop="@+id/imageView_startPause"
+            android:layout_toRightOf="@+id/imageView_startPause"
+            android:layout_toEndOf="@+id/imageView_startPause"
+            android:layout_marginLeft="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_startPause"
+            android:src="@drawable/selector_play"
+            android:clickable="true"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="00"
+            android:id="@+id/textView_days"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="50sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="80dp" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Hours"
+            android:id="@+id/textView2"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/textView_hours"
+            android:layout_toLeftOf="@+id/textView_minutes"
+            android:layout_toStartOf="@+id/textView_minutes" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Millis"
+            android:id="@+id/textView3"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/textView_millis"
+            android:layout_alignLeft="@+id/textView_millis"
+            android:layout_alignStart="@+id/textView_millis" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Minutes"
+            android:id="@+id/textView4"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/textView_minutes"
+            android:layout_toLeftOf="@+id/textView_seconds"
+            android:layout_toStartOf="@+id/textView_seconds" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Seconds"
+            android:id="@+id/textView5"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/textView_seconds"
+            android:layout_toLeftOf="@+id/textView_millis"
+            android:layout_toStartOf="@+id/textView_millis" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Days"
+            android:id="@+id/textView12"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_alignLeft="@+id/textView_days"
+            android:layout_alignStart="@+id/textView_days" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="00"
+            android:id="@+id/textView_hours"
+            android:textSize="50sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff"
+            android:layout_alignTop="@+id/textView_seconds"
+            android:layout_toRightOf="@+id/textView_days"
+            android:layout_toEndOf="@+id/textView_days"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="00"
+            android:id="@+id/textView_minutes"
+            android:textSize="50sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView_hours"
+            android:layout_toEndOf="@+id/textView_hours"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="000"
+            android:id="@+id/textView_millis"
+            android:textSize="50sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView_seconds"
+            android:layout_toEndOf="@+id/textView_seconds"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="00"
+            android:id="@+id/textView_seconds"
+            android:textSize="50sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView_minutes"
+            android:layout_toEndOf="@+id/textView_minutes"
+            android:layout_marginLeft="30dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laps"
+            android:id="@+id/textView"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="153dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="153dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Days"
+            android:id="@+id/textView11"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_marginLeft="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hours"
+            android:id="@+id/textView13"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView11"
+            android:layout_toEndOf="@+id/textView11"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mins"
+            android:id="@+id/textView14"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView13"
+            android:layout_toEndOf="@+id/textView13"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Secs"
+            android:id="@+id/textView15"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView14"
+            android:layout_toEndOf="@+id/textView14"
+            android:layout_marginLeft="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Millis"
+            android:id="@+id/textView16"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView15"
+            android:layout_toEndOf="@+id/textView15"
+            android:layout_marginLeft="15dp" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:id="@+id/listView_recentLaps"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.4"
+        android:layout_marginLeft="20dp"
+        tools:listitem="@layout/adapter_lap" />
+
+</LinearLayout>
